@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from app.models.key_value import KeyValue
-from app.schemas.key_value import KeyValueCreate
+from app.schemas import KeyValueCreate
 
 class KeyValueRepository:
     def __init__(self, db: Session):
